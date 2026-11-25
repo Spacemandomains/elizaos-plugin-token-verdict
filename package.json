@@ -1,1 +1,66 @@
-{"agentConfig":{"pluginParameters":{"EVM_PRIVATE_KEY":{"description":"EVM private key for a wallet holding a small USDC float on Base. Each CHECK_TOKEN call pays exactly $0.02 via x402; failed checks (HTTP 502) are never charged. Keep only a capped float in this wallet.","required":true,"sensitive":true,"type":"string"}},"pluginType":"adapter"},"author":"Wilfred Lee Jr (Spacemandomains)","dependencies":{"@elizaos/core":"^1.0.0","@x402/evm":"^2.0.0","@x402/fetch":"^2.0.0","viem":"^2.0.0"},"description":"Token Verdict for ElizaOS: pre-trade Base token safety check via x402 ($0.02/call). CHECK_TOKEN returns clean/caution/rug_risk/exit_trap + 0-100 score before a trade.","devDependencies":{"@types/node":"^26.6.10","typescript":"^5.0.0"},"exports":{".":{"import":"./dist/index.js","types":"./dist/index.d.ts"}},"files":["dist","images","README.md"],"homepage":"https://crypto-intel-agent.vercel.app","keywords":["elizaos","elizaos-plugin","plugin","x402","base","token-safety","rug-check","trading"],"license":"MIT","main":"dist/index.js","name":"@elizaos/plugin-token-verdict","peerDependencies":{"@elizaos/core":"^1.0.0"},"repository":{"type":"git","url":"git+https://github.com/Spacemandomains/elizaos-plugin-token-verdict.git"},"scripts":{"build":"tsc","dev":"tsc --watch","prepublishOnly":"npm run build","test":"node --experimental-vm-modules -e \"console.log('component tests in src/__tests__ run under elizaos test / bun test')\""},"type":"module","types":"dist/index.d.ts","version":"0.1.0"}
+{
+  "agentConfig": {
+    "pluginParameters": {
+      "EVM_PRIVATE_KEY": {
+        "description": "EVM private key for a wallet holding a small USDC float on Base. Each CHECK_TOKEN call pays exactly $0.02 via x402; failed checks (HTTP 502) are never charged. Keep only a capped float in this wallet.",
+        "required": true,
+        "sensitive": true,
+        "type": "string"
+      }
+    },
+    "pluginType": "adapter"
+  },
+  "author": "Wilfred Lee Jr (Spacemandomains)",
+  "dependencies": {
+    "@elizaos/core": "^1.0.0",
+    "@x402/evm": "^2.0.0",
+    "@x402/fetch": "^2.0.0",
+    "viem": "^2.0.0"
+  },
+  "description": "Token Verdict for ElizaOS: pre-trade Base token safety check via x402 ($0.02/call). CHECK_TOKEN returns clean/caution/rug_risk/exit_trap + 0-100 score before a trade.",
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "images",
+    "README.md"
+  ],
+  "homepage": "https://crypto-intel-agent.vercel.app",
+  "keywords": [
+    "elizaos",
+    "elizaos-plugin",
+    "plugin",
+    "x402",
+    "base",
+    "token-safety",
+    "rug-check",
+    "trading"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@thewinnerscircle/plugin-token-verdict",
+  "peerDependencies": {
+    "@elizaos/core": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spacemandomains/elizaos-plugin-token-verdict.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node --experimental-vm-modules -e \"console.log('component tests in src/__tests__ run under elizaos test / bun test')\""
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "0.1.0"
+}
