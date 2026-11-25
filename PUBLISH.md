@@ -17,7 +17,7 @@ terminal where he controls the login:
 git clone <this folder's repo once pushed>  # or copy this folder from the VM workspace
 
 # 2. Auth (one time, interactive — Wilfred does this himself)
-npm login                      # npm account that will own @elizaos/plugin-token-verdict
+npm login                      # npm account that will own @thewinnerscircle/plugin-token-verdict
                                # NOTE: publishing under the @elizaos scope requires
                                # membership of the elizaos npm org. If npm rejects the
                                # scope, rename to @spacemandomains/plugin-token-verdict

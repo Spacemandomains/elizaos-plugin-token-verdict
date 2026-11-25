@@ -1,4 +1,4 @@
-# @elizaos/plugin-token-verdict
+# @thewinnerscircle/plugin-token-verdict
 
 Token Verdict for ElizaOS — a pre-trade Base token safety check, paid per call via x402.
 
@@ -28,14 +28,14 @@ exit_trap → DO NOT TRADE
 ## Install
 
 ```bash
-elizaos plugins add @elizaos/plugin-token-verdict
-# or: npm install @elizaos/plugin-token-verdict
+elizaos plugins add @thewinnerscircle/plugin-token-verdict
+# or: npm install @thewinnerscircle/plugin-token-verdict
 ```
 
 Add to your character:
 
 ```json
-{ "plugins": ["@elizaos/plugin-token-verdict"] }
+{ "plugins": ["@thewinnerscircle/plugin-token-verdict"] }
 ```
 
 ## Configuration
